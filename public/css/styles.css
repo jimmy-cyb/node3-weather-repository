@@ -1,0 +1,43 @@
+h1 {
+    color: gray;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+nav a {
+    background-color: lightcoral;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    justify-content: space-around;
+    grid-gap: 0 10px;
+}
+
+.nav-items {
+    grid-column: span 4/span 4;
+}
+
+.nav-items:hover {
+    background-color: white;
+    color: lightcoral;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+}
