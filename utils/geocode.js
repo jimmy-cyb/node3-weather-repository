@@ -6,7 +6,7 @@ const geocode=(address,callback)=>{
         callback("Can't connect to internet");
       }
       else if(body.message || body.features.length === 0){
-        callback("Can't found location. Try another search");
+        callback("Can't find location. Try another search");
       }
       else {
         callback(undefined,{

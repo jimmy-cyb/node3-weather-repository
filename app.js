@@ -4,7 +4,7 @@ const request = require('request');
 const path= require('path');
 const express = require('express');
 const hbs = require('hbs');
-
+const port = process.env.PORT || 3000;
 const app= express();
 const viewPath=path.join(__dirname, './templates/views');
 
@@ -87,6 +87,6 @@ app.get('*',(req,res)=>{
    });
 })
 
-app.listen(3000, (req,res)=>{
-    console.log("Server started")
+app.listen(port, (req,res)=>{
+    console.log("Server started on port "+port)
 })

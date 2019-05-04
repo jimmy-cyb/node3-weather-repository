@@ -7,7 +7,7 @@ formElement.addEventListener('submit',(e)=>{
     document.getElementById("message").innerHTML="Loading";
     const searchvalue= document.forms[0]["location"].value;
     console.log("submit event fired"+ "value seaarched: "+searchvalue);
-    fetch('http://localhost:3000/weather?address='+searchvalue).then((response)=>{
+    fetch('/weather?address='+searchvalue).then((response)=>{
       response.json().then((data)=>{
         if(data.error)
         {
