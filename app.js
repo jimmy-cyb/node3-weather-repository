@@ -1,5 +1,5 @@
-const geocode = require('../web-server/utils/geocode');
-const forecast = require('../web-server/utils/forecast');
+const geocode = require('./utils/geocode');
+const forecast = require('./utils/forecast');
 const request = require('request');
 const path= require('path');
 const express = require('express');
