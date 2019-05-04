@@ -58,7 +58,7 @@ app.get('/weather',(req,res)=>{
             // console.log("It is currently "+ forecastresponse.temperature +" degrees out. There is a "+ forecastresponse.chanceOfRain +"% chance of rain");
             res.send({
                 location: placename,
-                forecast: "It is currently "+ forecastresponse.temperature +" degrees out. There is a "+ forecastresponse.chanceOfRain +"% chance of rain"
+                forecast: "It is currently "+ forecastresponse.temperature +" degrees out. There is a "+ forecastresponse.chanceOfRain +"% chance of rain."+"Maximum temp: "+forecastresponse.tempHigh+"Min temp: "+forecastresponse.tempLow
             });  
         }
           else {
